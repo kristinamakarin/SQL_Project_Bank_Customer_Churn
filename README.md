@@ -34,7 +34,10 @@ To establish a baseline, I counted total customers and summed the churn flag to 
 **Key finding:** Out of 10,000 customers, 2,037 have churned — an overall churn rate of 20.37%. This is a meaningful baseline: any segment with a churn rate notably above 20.37% represents elevated risk worth investigating further, while segments below this rate are relatively stable.
 
 ### 2. Churn Rate by Geography
-*(fill in)*
+
+To see whether churn varies by country, I calculated the churn rate for each country and compared it against the overall baseline (20.37%) using a CTE for each, joined together.
+
+**Key finding:** Germany stands out sharply with a 32.44% churn rate — 12.07 percentage points above the baseline, meaning German customers are leaving at roughly 1.6x the overall rate. Spain (16.67%) and France (16.15%) are both notably below average, at 3-4 points under baseline. This points to Germany as a clear priority market for retention efforts, rather than a bank-wide issue.
 
 ### 3. Churn Rate by Number of Products
 *(fill in)*
