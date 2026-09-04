@@ -40,7 +40,12 @@ To see whether churn varies by country, I calculated the churn rate for each cou
 **Key finding:** Germany stands out sharply with a 32.44% churn rate — 12.07 percentage points above the baseline, meaning German customers are leaving at roughly 1.6x the overall rate. Spain (16.67%) and France (16.15%) are both notably below average, at 3-4 points under baseline. This points to Germany as a clear priority market for retention efforts, rather than a bank-wide issue.
 
 ### 3. Churn Rate by Number of Products
-*(fill in)*
+
+To see how product count relates to churn, I calculated the churn rate for each product count group, compared against the overall baseline.
+
+**Key finding:** This is the strongest signal in the dataset. All 60 customers with 4 products have churned — a 100% churn rate, and with a large enough sample size (60 customers) that this isn't a statistical fluke. Customers with 3 products aren't far behind at 82.71% (266 customers, 62.34 points above baseline). In sharp contrast, customers with 1 product churn at 27.71% (5,084 customers, close to baseline), and customers with 2 products are the most stable segment at just 7.58% (4,590 customers, 12.79 points *below* baseline). This strongly suggests that 2 products is the "sweet spot" for retention, while pushing customers toward 3+ products — likely intended as a loyalty/cross-sell strategy — is instead strongly correlated with churn, possibly due to product complexity, fees, or dissatisfaction with bundled services.
+
+*Note: The dataset doesn't specify which exact products are counted (e.g. checking account, savings, credit card, loan) — only the total count per customer.*
 
 ### 4. Churn Rate: Active vs. Inactive Members
 *(fill in)*
