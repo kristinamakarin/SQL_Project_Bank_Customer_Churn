@@ -48,7 +48,10 @@ To see how product count relates to churn, I calculated the churn rate for each 
 *Note: The dataset doesn't specify which exact products are counted (e.g. checking account, savings, credit card, loan) — only the total count per customer.*
 
 ### 4. Churn Rate: Active vs. Inactive Members
-*(fill in)*
+
+To test whether member engagement affects retention, I classified customers as "Active" or "Inactive" and calculated churn rate for each group.
+
+**Key finding:** Inactive members churn at 26.85% (1,302 of 4,849), nearly double the rate of active members at 14.27% (735 of 5,151). This confirms that engagement is a strong retention lever — a customer who isn't actively using the bank's services is significantly more likely to leave, making re-engagement campaigns for inactive members a straightforward, high-impact opportunity.
 
 ### 5. Churn Rate by Age Group
 *(fill in)*
