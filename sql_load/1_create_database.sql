@@ -1,0 +1,1 @@
+CREATE DATABASE bank_customer_churn;
