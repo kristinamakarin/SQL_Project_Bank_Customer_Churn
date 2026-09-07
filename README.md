@@ -65,8 +65,13 @@ To see how credit score relates to churn, I bucketed customers into standard cre
 
 **Key finding:** Three groups exceed the baseline — Poor (22.02%), Very Good (20.59%), and Fair (20.56%) — but the differences are small, only 0.2 to 1.65 percentage points above average. This is a much weaker signal than age or product count: credit score alone doesn't strongly predict churn in this dataset, suggesting it's not a priority factor for the retention strategy compared to product count, age, and geography.
 
-### 7. Recommended Segment for Retention Campaign
-*(fill in)*
+### 7. Highest-Risk Category per Factor
+
+Summarizing the highest-risk finding from each prior analysis into a single view: for geography, product count, activity status, and age, which specific category has the highest churn rate?
+
+**Key finding:** Germany (32.44%), 4 products (100%), Inactive members (26.85%), and the 45-59 age group (49.45%) each represent the highest-risk category within their respective factor. Notably, these individual "worst" rates vary dramatically in severity — product count and age are far stronger risk indicators than geography or activity status, suggesting the retention strategy should weight these factors accordingly rather than treating all four as equally important.
+
+*Note: this table shows the worst category within each factor independently — it doesn't mean these customers necessarily overlap into a single profile. Query 8 tests that directly.*
 
 ## What I Learned
 *(fill in at the end)*
