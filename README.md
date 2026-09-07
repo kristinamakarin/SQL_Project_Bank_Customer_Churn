@@ -54,7 +54,10 @@ To test whether member engagement affects retention, I classified customers as "
 **Key finding:** Inactive members churn at 26.85% (1,302 of 4,849), nearly double the rate of active members at 14.27% (735 of 5,151). This confirms that engagement is a strong retention lever — a customer who isn't actively using the bank's services is significantly more likely to leave, making re-engagement campaigns for inactive members a straightforward, high-impact opportunity.
 
 ### 5. Churn Rate by Age Group
-*(fill in)*
+
+To see how age relates to churn, I bucketed customers into four age groups and calculated the churn rate for each.
+
+**Key finding:** The 45-59 age group has by far the highest churn rate at 49.45% (897 of 1,814 customers) — nearly half of this group has left. The 60+ group is also elevated at 27.95%, while younger customers are much more stable: 30-44 churns at 14.44% and 18-29 at just 7.56%. This suggests churn risk increases sharply with age, particularly around the 45-59 range — possibly tied to life-stage financial decisions (retirement planning, switching to specialized wealth management elsewhere) rather than dissatisfaction with day-to-day banking.
 
 ### 6. Churn Rate by Credit Score
 *(fill in)*
