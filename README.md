@@ -60,7 +60,10 @@ To see how age relates to churn, I bucketed customers into four age groups and c
 **Key finding:** The 45-59 age group has by far the highest churn rate at 49.45% (897 of 1,814 customers) — nearly half of this group has left. The 60+ group is also elevated at 27.95%, while younger customers are much more stable: 30-44 churns at 14.44% and 18-29 at just 7.56%. This suggests churn risk increases sharply with age, particularly around the 45-59 range — possibly tied to life-stage financial decisions (retirement planning, switching to specialized wealth management elsewhere) rather than dissatisfaction with day-to-day banking.
 
 ### 6. Churn Rate by Credit Score
-*(fill in)*
+
+To see how credit score relates to churn, I bucketed customers into standard credit score ranges (Poor, Fair, Good, Very Good, Excellent) and used `HAVING` to filter results down to only the groups exceeding the bank's overall 20.37% churn rate.
+
+**Key finding:** Three groups exceed the baseline — Poor (22.02%), Very Good (20.59%), and Fair (20.56%) — but the differences are small, only 0.2 to 1.65 percentage points above average. This is a much weaker signal than age or product count: credit score alone doesn't strongly predict churn in this dataset, suggesting it's not a priority factor for the retention strategy compared to product count, age, and geography.
 
 ### 7. Recommended Segment for Retention Campaign
 *(fill in)*
