@@ -17,7 +17,8 @@ The queries I wrote can be found in the [`project_sql/`](./project_sql/) folder.
 4. Are inactive members more likely to churn than active ones?
 5. Does churn correlate with age group?
 6. Does churn correlate with credit score?
-7. Which customer segment should be prioritized for a retention campaign? (combining the highest-risk, highest-value factors)
+7. Which single category is the highest-risk within each individual factor (geography, product count, activity, age)?
+8. How many customers match all four highest-risk factors simultaneously, and what is their combined churn rate?
 
 ## Tools I used
 - **SQL** — for querying and analyzing the data
@@ -72,6 +73,14 @@ Summarizing the highest-risk finding from each prior analysis into a single view
 **Key finding:** Germany (32.44%), 4 products (100%), Inactive members (26.85%), and the 45-59 age group (49.45%) each represent the highest-risk category within their respective factor. Notably, these individual "worst" rates vary dramatically in severity — product count and age are far stronger risk indicators than geography or activity status, suggesting the retention strategy should weight these factors accordingly rather than treating all four as equally important.
 
 *Note: this table shows the worst category within each factor independently — it doesn't mean these customers necessarily overlap into a single profile. Query 8 tests that directly.*
+
+### 8. Combined Risk Segment
+
+Combining all four highest-risk categories identified in Query 7 (Germany, 4 products, inactive membership, age 45-59), I queried how many customers match this exact combined profile, and what their churn rate is — using dynamic subqueries rather than hardcoded values, so the query automatically adapts if the underlying data changes.
+
+**Key finding:** Only 7 customers in the entire bank match this precise combination of risk factors — and all 7 have churned (100%). While this exact segment is too small to justify a standalone campaign, it validates that these four factors compound rather than operate independently: a customer accumulating multiple risk factors faces near-certain churn.
+
+**Recommendation:** Rather than targeting this narrow 7-customer segment directly, the bank should prioritize retention outreach for customers matching *any two or more* of these high-risk factors — starting with the strongest individual driver (4 products, 100% churn) and layering in geography (Germany), inactivity, and the 45-59 age range as secondary flags. Proactively re-engaging inactive, multi-product German customers in this age range — before they reach the full four-factor profile — represents the highest-leverage intervention point identified in this analysis.
 
 ## What I Learned
 *(fill in at the end)*
